@@ -35,32 +35,32 @@ This project demonstrates the full lifecycle of an NLP/ML system:
 
 ## Project Structure
 
-steam-reviews-nlp/
-├── app/
-│ └── streamlit_app.py # Streamlit chatbot UI
-├── data/
-│ ├── raw/ # Original datasets
-│ └── processed/ # Train/val/test splits
-├── models/ # Saved models (not in Git)
-├── notebooks/
-│ ├── 01_eda.ipynb # Exploratory Data Analysis
-│ ├── 02_preprocessing.ipynb # Preprocessing & data splitting
-│ ├── 03_embeddings.ipynb # TF-IDF, Word2Vec, Sentence Transformers
-│ ├── 04_topic_modeling.ipynb # LDA & BERTopic
-│ ├── 05_classification.ipynb # Model training & comparison
-│ ├── 06_xai.ipynb # SHAP explainability
-│ └── 07_rag_evaluation.ipynb # RAG system evaluation
-├── src/
-│ ├── preprocessing.py # Text cleaning pipeline
-│ ├── embeddings.py # Embedding utilities
-│ ├── training.py # Model training functions
-│ ├── evaluation.py # Metrics & comparison
-│ └── rag/
-│ ├── retriever.py # FAISS vector retrieval
-│ └── generator.py # Groq LLM generation
-├── config.py # Central configuration
-├── requirements.txt # Dependencies
-└── .env.example # API key template
+    steam-reviews-nlp/
+    ├── app/
+    │   └── streamlit_app.py          # Streamlit chatbot UI
+    ├── data/
+    │   ├── raw/                      # Original datasets
+    │   └── processed/                # Train/val/test splits
+    ├── models/                       # Saved models (not in Git)
+    ├── notebooks/
+    │   ├── 01_eda.ipynb              # Exploratory Data Analysis
+    │   ├── 02_preprocessing.ipynb    # Preprocessing & data splitting
+    │   ├── 03_embeddings.ipynb       # TF-IDF, Word2Vec, Sentence Transformers
+    │   ├── 04_topic_modeling.ipynb   # LDA & BERTopic
+    │   ├── 05_classification.ipynb   # Model training & comparison
+    │   ├── 06_xai.ipynb              # SHAP explainability
+    │   └── 07_rag_evaluation.ipynb   # RAG system evaluation
+    ├── src/
+    │   ├── preprocessing.py          # Text cleaning pipeline
+    │   ├── embeddings.py             # Embedding utilities
+    │   ├── training.py               # Model training functions
+    │   ├── evaluation.py             # Metrics & comparison
+    │   └── rag/
+    │       ├── retriever.py          # FAISS vector retrieval
+    │       └── generator.py          # Groq LLM generation
+    ├── config.py                     # Central configuration
+    ├── requirements.txt              # Dependencies
+    └── .env.example                  # API key template
 
 
 ## Tech Stack
