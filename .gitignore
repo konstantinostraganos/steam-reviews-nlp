@@ -1,0 +1,25 @@
+# Environment & secrets
+.env
+
+# Processed data (reproducible via notebooks)
+data/processed/*.csv
+
+# Saved models (too large for Git)
+models/*.index
+models/*.pkl
+models/*.joblib
+models/distilbert_sentiment/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
