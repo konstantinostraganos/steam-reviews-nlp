@@ -1,7 +1,11 @@
 # 🎮 Steam Reviews NLP — Sentiment Analysis & RAG Chatbot
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://steam-reviews-nlp-3ygfbqh2dg2b8354vpgn9d.streamlit.app/)
+
 An end-to-end NLP project that analyzes Steam game reviews for sentiment classification
 and provides an interactive RAG-powered chatbot for game recommendations.
+
+**[▶ Try the Live Demo](https://steam-reviews-nlp-3ygfbqh2dg2b8354vpgn9d.streamlit.app/)**
 
 ## Project Overview
 
@@ -88,7 +92,7 @@ cd steam-reviews-nlp
 python -m venv venv
 venv\Scripts\activate        # Windows
 source venv/bin/activate     # macOS/Linux
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 ```
 
 ### 3. Set up API key
