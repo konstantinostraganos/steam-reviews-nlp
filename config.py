@@ -12,6 +12,16 @@ from dotenv import load_dotenv
 # Load environment variables from .env file (API keys, secrets)
 load_dotenv()
 
+
+def _get_secret(key, default=""):
+    """Read a secret from Streamlit secrets (cloud) or env vars (local)."""
+    try:
+        import streamlit as st
+        return st.secrets.get(key, os.getenv(key, default))
+    except (ImportError, AttributeError, FileNotFoundError):
+        return os.getenv(key, default)
+
+
 # ---------------------------------------------------------------------------
 # Environment detection: Colab vs local
 # ---------------------------------------------------------------------------
@@ -104,7 +114,7 @@ DISTILBERT_SAVE_PATH = MODELS_DIR / "distilbert_sentiment"
 # ---------------------------------------------------------------------------
 # Groq API (LLM for RAG)
 # ---------------------------------------------------------------------------
-GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
+GROQ_API_KEY = _get_secret("GROQ_API_KEY")
 GROQ_MODEL = "openai/gpt-oss-20b"
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MAX_TOKENS = 512
