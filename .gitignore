@@ -15,6 +15,7 @@ __pycache__/
 *.pyc
 *.pyo
 .ipynb_checkpoints/
+.pytest_cache/
 
 # OS
 .DS_Store
