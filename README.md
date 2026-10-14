@@ -29,6 +29,17 @@ This project demonstrates the full lifecycle of an NLP/ML system:
 | XGBoost | 84.9% | 0.907 |
 | **DistilBERT (fine-tuned)** | **89.3%** | **0.933** |
 
+**Known limitation:** heavy preprocessing removes negations ("not", "no") via NLTK's stopword list, which affects the TF-IDF models. A controlled test across 10 splits showed keeping them improves macro F1 by ~1.5 points (p < 0.001). DistilBERT is unaffected (light preprocessing).
+
+### Sentiment Classification
+
+| Model | Accuracy | F1 Score |
+|-------|----------|----------|
+| Logistic Regression | 81.0% | 0.874 |
+| XGBoost | 84.9% | 0.907 |
+| **DistilBERT (fine-tuned)** | **89.3%** | **0.933** |
+
+
 ### RAG Evaluation
 
 | Metric | Score |
