@@ -1,5 +1,7 @@
 # 🎮 Steam Reviews NLP — Sentiment Analysis & RAG Chatbot
 
+[![CI](https://github.com/konstantinostraganos/steam-reviews-nlp/actions/workflows/ci.yml/badge.svg)](https://github.com/konstantinostraganos/steam-reviews-nlp/actions/workflows/ci.yml)
+
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://steam-reviews-nlp-3ygfbqh2dg2b8354vpgn9d.streamlit.app/)
 
 An end-to-end NLP project that analyzes Steam game reviews for sentiment classification
